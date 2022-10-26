@@ -25,8 +25,8 @@ $color: white;
     width: 360px;
     height: 640px;
     border-radius: .5rem;
-    box-shadow:  25px 25px 40px #969696,
-                -25px -25px 40px #ffffff;
+    box-shadow:  1px 1px 20px #969696,
+                -1px -1px 20px #ffffff;
     .teclado {
         display: grid;
         justify-content: center;
@@ -48,6 +48,11 @@ $color: white;
             }
         }
     }
+    #zero {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
     .display {
         display: flex;
         width: 100%;

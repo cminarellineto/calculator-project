@@ -1,14 +1,26 @@
+let inserirNumero = (num) => {
+    let numero = document.querySelector(".view").innerHTML
+    document.querySelector(".view").innerHTML = numero + num
+}
 
-// let tecladoArr = document.querySelectorAll("span");
-let botaoArr = document.querySelectorAll("button");
-let botao = botaoArr
+let limpar = () => {
+    document.querySelector(".view").innerHTML = ""
+}
 
-botao.addEventListener('click', function() {
-    console.log(botao.value)
-})
+let apagar = () => {
+    let resultado = document.querySelector(".view").innerHTML
+    document.querySelector(".view").innerHTML = resultado.substring(0, resultado.length -1)
+    
+}
 
-// function darValor() {
-//     botao.forEach(span => {
-//         return Element.value
-//     });
-// }
+let operacao = () => {
+    let resultado = document.querySelector(".view").innerHTML
+    if(resultado) {
+       let calculo = eval(resultado)
+       let decimal = calculo.toFixed(2)
+       document.querySelector(".view").innerHTML = decimal
+    }
+    else {
+        alert("Você precisa inserir um valor a ser calculado")
+    }
+}

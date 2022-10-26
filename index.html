@@ -11,25 +11,30 @@
   <body onload="">
     <div class="calculadora-container">
       <div class="display">
-        <p>0</p>
+        <p class="view"></p>
       </div>
       <div class="teclado">
-        <button id="one" value="1">1</button>
-        <button id="two">2</button>
-        <button id="three">3</button>
-        <button id="plus">+</button>
-        <button id="four">4</button>
-        <button id="five">5</button>
-        <button id="six">6</button>
-        <button id="minus">-</button>
-        <button id="seven">7</button>
-        <button id="eight">8</button>
-        <button id="nine">9</button>
-        <button id="multiply">x</button>
-        <div></div>
-        <button id="zero">0</button>
-        <button id="equal">=</button>
-        <button id="division">&#247</button>
+        <button onclick="limpar()">C</button>
+        <button onclick="apagar()">&lt</button>
+        <button onclick="inserirNumero('/')">&#247</button>
+        <button onclick="inserirNumero('*')">x</button>
+        <button onclick="inserirNumero('1')">1</button>
+        <button onclick="inserirNumero('2')">2</button>
+        <button onclick="inserirNumero('3')">3</button>
+        <button onclick="inserirNumero('-')">-</button>
+        <button onclick="inserirNumero('4')">4</button>
+        <button onclick="inserirNumero('5')">5</button>
+        <button onclick="inserirNumero('6')">6</button>
+        <button onclick="inserirNumero('+')">+</button>
+        <button onclick="inserirNumero('7')">7</button>
+        <button onclick="inserirNumero('8')">8</button>
+        <button onclick="inserirNumero('9')">9</button>
+        <button id="equal" onclick="operacao()">=</button>
+        <button id="zero" onclick="inserirNumero('0')">0</button>
+        <button onclick="inserirNumero('.')">,</button>
+        
+        
+        
       </div>
     </div>
   </body>
